@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(img/lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a {
+  text-shadow: 0 0 5px rgb(103, 199, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.navbar a:hover {
+  background-color: rgb(103, 199, 255);
+  border-radius: 30px;
+}
+
+.navbar li {
+  float: left;
+}
+
+footer {
+  background-color: white;
+  padding-top: 35px;
+  text-align: right;
+  margin-top: 215px;
+}
+
+div {
+  text-decoration: none;
+  width: 50%;
+  padding: 20px;
+  color: white;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.grid-right {
+  margin-left: 62%;
+  margin-top: -16%;
+  width: 35%;
+}
+
+.grid-left {
+  width: 35%;
+  margin-top: 10%;
+  padding-left: 60px;
+  text-align: left;
+}
