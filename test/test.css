@@ -29,7 +29,8 @@ h4 {
 }
 
 p {
-  color: white;
+  text-align: center;
+  color: whitesmoke;
   font-size: 1.2rem;
 }
 .nav-menu {
@@ -41,14 +42,15 @@ p {
 
 nav {
   background-color: #001e2c;
-  color: white;
+  color: whitesmoke;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 0px 0;
+  padding-top: 25px;
 }
 
 li::marker {
@@ -62,9 +64,9 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 nav a:hover {
@@ -80,11 +82,16 @@ main {
 }
 
 li {
+  padding-bottom: 30px;
   margin-left: 10px;
-  color: white;
-
-  font-size: 1.3rem;
+  color: whitesmoke;
+  font-size: 1.1rem;
 }
+
+.section1 {
+  padding-left: 10%;
+}
+
 section {
   padding: 20px;
   border-radius: 5px;
@@ -103,13 +110,14 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #001e2c;
-  color: white;
+  color: whitesmoke;
   text-align: right;
   padding-top: 10px;
 }
 
 .copy {
   font-size: 15px;
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
