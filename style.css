@@ -1,81 +1,132 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
+  font-family: "Roboto Slab", serif;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url(img/lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  min-height: 100vh;
+  background-image: url(img/engin-akyurt-BawjznQ3Q8U-unsplash3.jpg);
+}
+header {
+  background-color: #4444;
 }
 
 h1 {
   color: white;
   text-align: center;
-  padding-top: 35px;
+  font-size: 2.1rem;
+}
+
+h3 {
+  color: #001e2c;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+h4 {
+  color: #001e2c;
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
 nav {
-  background-color: white;
-  color: #fff;
-  text-align: center;
-}
-
-nav li {
-  display: inline;
-  margin: 0 20px;
+  background-color: #001e2c;
+  color: whitesmoke;
 }
 
 nav ul {
   list-style: none;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+  padding-top: 25px;
+}
+
+li::marker {
+  font-size: 1.2em;
+  color: #001e2c;
+}
+
+nav li {
+  margin: 0 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #000000;
+  color: whitesmoke;
   font-weight: bold;
-  font-size: 20px;
-  transition: color 0.3s ease;
+  font-size: 1.4rem;
 }
 
 nav a:hover {
-  color: rgb(0, 122, 179);
-  transform: scale(0.6px);
+  background-color: rgb(0, 137, 179);
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+main {
+  padding: 5px;
+}
+
+li {
+  padding-bottom: 30px;
+  margin-left: 10px;
+  color: whitesmoke;
+  font-size: 1.1rem;
+}
+
+.section1 {
+  padding-left: 10%;
+}
+
+section {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #001e2c;
+  margin-bottom: 50px;
 }
 
 footer {
-  background-color: white;
-  padding-top: 35px;
+  position: fixed;
+  padding-bottom: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #001e2c;
+  color: whitesmoke;
   text-align: right;
-  margin-top: 215px;
+  padding-top: 10px;
 }
 
-div {
-  text-decoration: none;
-  width: 50%;
-  padding: 20px;
-  color: white;
-  padding-right: 30px;
-  font-size: 18px;
+.copy {
+  font-size: 15px;
+  text-align: right;
 }
 
-.grid-right {
-  margin-left: 62%;
-  margin-top: -16%;
-  width: 35%;
-}
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.grid-left {
-  width: 35%;
-  margin-top: 10%;
-  padding-left: 60px;
-  text-align: left;
-}
-
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+  nav li {
+    margin: 10px 0;
+  }
 }
