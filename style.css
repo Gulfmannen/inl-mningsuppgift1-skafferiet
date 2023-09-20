@@ -1,3 +1,4 @@
+/* Gemensam style för allt på webbplatsen */
 * {
   font-family: "Roboto Slab", serif;
   padding: 0;
@@ -5,37 +6,47 @@
   box-sizing: border-box;
 }
 
+/* Bakgrundsbild  */
 body {
   background-image: url(img/engin-akyurt-BawjznQ3Q8U-unsplash3.jpg);
 }
+
+/* style för sidhuvudet */
 header {
   background-color: #4444;
 }
 
-h1 {
+/* Gemensam style för rubriker */
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: white;
+}
+
+h1 {
   text-align: center;
   font-size: 2.1rem;
 }
-#meddelande {
-  background-color: rgb(255, 255, 225);
-}
-h2 {
-  color: white;
-  font-size: 1.3rem;
 
+h2 {
+  font-size: 1.3rem;
   padding: 10px;
 }
+
 h3 {
+  font-size: 1.4rem;
   color: #001e2c;
   padding-left: 30px;
   padding-top: 50px;
 }
 
-h4 {
-  color: white;
+p::first-letter {
+  font-size: xx-large;
 }
 
+/* style för stycken */
 p {
   background-color: #22448c75;
   padding: 10px;
@@ -44,6 +55,8 @@ p {
   color: whitesmoke;
   font-size: 1.2rem;
 }
+
+/* style för navigering */
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -65,8 +78,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 15px 0;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 nav li {
@@ -88,34 +100,27 @@ nav a:hover {
   transition: all 0.2s;
 }
 
+/* style för "om oss"-section */
+.om-oss-section {
+  width: 700px;
+}
+
+/* style för huvudinnehåll */
 main {
   padding: 5px;
 }
 
-.artikel1 {
-  text-align: left;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
-.artikel2 {
-  text-align: left;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
-.artikel3 {
-  text-align: left;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
+/* Gemensam style för artikelar */
+.artikel1,
+.artikel2,
+.artikel3,
 .artikel4 {
   text-align: left;
   padding-left: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
+/* style för listor */
 li {
   padding-bottom: 10px;
   color: whitesmoke;
@@ -128,7 +133,10 @@ ul {
   border-radius: 10px;
   list-style-type: none;
 }
-.section1 {
+
+/* Gemensam style för sections */
+.section1,
+.section2 {
   padding: 10px;
 }
 
@@ -137,6 +145,8 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* style som gäller enbart sections2 */
 .section2 {
   padding-left: 50px;
 }
@@ -146,6 +156,7 @@ section h2 {
   margin-bottom: 50px;
 }
 
+/* style för sidfoten */
 footer {
   font-size: 13px;
   position: fixed;
@@ -157,18 +168,41 @@ footer {
   text-align: right;
 }
 
-img {
-  border-radius: 30%;
+/* Stil för bilder i "om oss"-sektionen */
+.om-oss img {
+  border: solid;
+  border-radius: 100%;
+  float: right;
+  max-width: 100%;
+  height: auto;
 }
 
+/* style för upphovsrätt */
 .copy {
   font-size: 11px;
   text-align: right;
 }
 
-h5 {
+/* style för tabeller */
+table {
   font-size: 12px;
+  border-radius: 5px;
+  border: solid 5px #22448c;
 }
+
+th {
+  color: white;
+  background-color: #22448c;
+  font-weight: bold;
+}
+
+td {
+  color: white;
+  background-color: #22448c;
+  font-weight: bold;
+}
+
+/* anpassning för mobiler (mobilanpassning) */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -182,5 +216,13 @@ h5 {
 
   nav li {
     margin: 10px 0;
+  }
+
+  .om-oss-section {
+    max-width: 350px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
   }
 }
