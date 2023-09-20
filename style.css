@@ -17,7 +17,15 @@ h1 {
   text-align: center;
   font-size: 2.1rem;
 }
+#meddelande {
+  background-color: rgb(255, 255, 225);
+}
+h2 {
+  color: white;
+  font-size: 1.3rem;
 
+  padding: 10px;
+}
 h3 {
   color: #001e2c;
   padding-left: 30px;
@@ -25,10 +33,13 @@ h3 {
 }
 
 h4 {
-  color: #001e2c;
+  color: white;
 }
 
 p {
+  background-color: #22448c75;
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
   color: whitesmoke;
   font-size: 1.2rem;
@@ -41,21 +52,21 @@ p {
 }
 
 nav {
-  background-color: #001e2c;
+  background-color: #22438c;
   color: whitesmoke;
+}
+
+li::marker {
+  font-size: 1.2em;
+  color: #001e2c;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0px 0;
+  padding: 15px 0;
   padding-top: 25px;
-}
-
-li::marker {
-  font-size: 1.2em;
-  color: #001e2c;
 }
 
 nav li {
@@ -81,21 +92,53 @@ main {
   padding: 5px;
 }
 
+.artikel1 {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.artikel2 {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.artikel3 {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.artikel4 {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 60px;
+}
+
 li {
-  padding-bottom: 30px;
-  margin-left: 10px;
+  padding-bottom: 10px;
   color: whitesmoke;
   font-size: 1.1rem;
 }
 
+ul {
+  background-color: #22448c75;
+  padding: 10px;
+  border-radius: 10px;
+  list-style-type: none;
+}
 .section1 {
-  padding-left: 10%;
+  padding: 10px;
 }
 
 section {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section2 {
+  padding-left: 50px;
 }
 
 section h2 {
@@ -104,26 +147,37 @@ section h2 {
 }
 
 footer {
+  font-size: 13px;
   position: fixed;
-  padding-bottom: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #001e2c;
+  background-color: #22448c;
   color: whitesmoke;
   text-align: right;
-  padding-top: 10px;
+}
+
+img {
+  border-radius: 30%;
 }
 
 .copy {
-  font-size: 15px;
+  font-size: 11px;
   text-align: right;
 }
 
+h5 {
+  font-size: 12px;
+}
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   nav li {
