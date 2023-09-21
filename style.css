@@ -110,7 +110,7 @@ main {
   padding: 5px;
 }
 
-/* Gemensam style för artikelar */
+/* Gemensam style för artiklar */
 .artikel1,
 .artikel2,
 .artikel3,
@@ -168,7 +168,7 @@ footer {
   text-align: right;
 }
 
-/* Stil för bilder i "om oss"-sektionen */
+/* Stil för bilder i "om oss"-sections */
 .om-oss img {
   border: solid;
   border-radius: 100%;
@@ -185,18 +185,26 @@ footer {
 
 /* style för tabeller */
 table {
+  background-color: gray;
   font-size: 12px;
   border-radius: 5px;
-  border: solid 5px #22448c;
+  border: solid #22448c;
 }
 
 th {
+  background-color: rgb(194, 194, 194);
+  border: solid #000c40;
+  width: 100px;
   color: white;
   background-color: #22448c;
   font-weight: bold;
 }
 
 td {
+  background-color: gray;
+  text-align: center;
+  border: solid #00091e;
+  width: 50px;
   color: white;
   background-color: #22448c;
   font-weight: bold;
@@ -224,5 +232,12 @@ td {
     justify-content: center;
     max-width: 100%;
     height: auto;
+  }
+}
+
+meedia {
+  .kfjgfkjg {
+  }
+  .jfgfjf {
   }
 }
