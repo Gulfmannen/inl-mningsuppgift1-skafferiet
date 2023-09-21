@@ -9,6 +9,7 @@
 /* Bakgrundsbild  */
 body {
   background-image: url(img/engin-akyurt-BawjznQ3Q8U-unsplash3.jpg);
+  background-size: cover;
 }
 
 /* style för sidhuvudet */
@@ -101,7 +102,7 @@ nav a:hover {
 }
 
 /* style för "om oss"-section */
-.om-oss-section {
+.om-mig-section {
   width: 700px;
 }
 
@@ -169,12 +170,13 @@ footer {
 }
 
 /* Stil för bilder i "om oss"-sections */
-.om-oss img {
+.om-mig img {
+  border-radius: 50%;
+  width: 500px;
+  position: relative;
   border: solid;
-  border-radius: 100%;
-  float: right;
-  max-width: 100%;
-  height: auto;
+  margin-left: 50rem;
+  bottom: 20rem;
 }
 
 /* style för upphovsrätt */
@@ -190,7 +192,7 @@ table {
   border-radius: 5px;
   border: solid #22448c;
 }
-
+/* style för th elementet */
 th {
   background-color: rgb(194, 194, 194);
   border: solid #000c40;
@@ -199,7 +201,7 @@ th {
   background-color: #22448c;
   font-weight: bold;
 }
-
+/* style för td elementet */
 td {
   background-color: gray;
   text-align: center;
@@ -222,22 +224,21 @@ td {
     height: auto;
   }
 
+  .om-mig img {
+    margin-left: 0;
+    bottom: 0;
+    max-width: 100%;
+  }
+
   nav li {
     margin: 10px 0;
   }
 
-  .om-oss-section {
+  .om-mig-section {
     max-width: 350px;
     text-align: center;
     justify-content: center;
     max-width: 100%;
     height: auto;
-  }
-}
-
-meedia {
-  .kfjgfkjg {
-  }
-  .jfgfjf {
   }
 }
